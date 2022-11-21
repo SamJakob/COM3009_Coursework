@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'com.samjakob.com3009'
+version '1.0-SNAPSHOT'
+
+application {
+    mainClass = 'com.samjakob.com3009.AESBenchmark'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.1'
+}
+
+test {
+    useJUnitPlatform()
+}
